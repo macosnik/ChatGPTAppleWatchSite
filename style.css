@@ -1,0 +1,56 @@
+:root {
+  --bg: #000;
+  --fg: #f5f5f7;
+  --fg-user: #fff;
+  --btn-bg: #1d1d1f;
+  --btn-bg-hover: #2a2a2c;
+  --radius: 10px;
+  --shadow: 0 4px 12px rgba(0,0,0,0.4);
+}
+html, body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--fg);
+  font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", sans-serif;
+}
+.container { padding: 20px; }
+.msg-user, .msg-pc { margin-bottom: 10px; }
+.msg-pc {
+  background: #2f2f2f;
+  padding: 10px 14px;
+  border-radius: var(--radius);
+  max-width: 80%;
+}
+.msg-user {
+  background: #007aff;
+  color: var(--fg-user);
+  padding: 10px 14px;
+  border-radius: var(--radius);
+  max-width: 80%;
+  margin-left: auto;
+  white-space: pre-line;
+}
+.form-block { margin-top: 20px; display: flex; flex-direction: column; gap: 10px; }
+.input {
+  flex: 1;
+  font-size: 24px;
+  padding: 20px 24px;
+  color: var(--fg);
+  background: #0b0b0c;
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: var(--radius);
+  outline: none;
+  box-shadow: none;
+}
+.btn-send {
+  padding: 20px;
+  font-size: 22px;
+  font-weight: 600;
+  color: var(--fg);
+  background: var(--btn-bg);
+  border: none;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  cursor: pointer;
+}
+.btn-send:hover { background: var(--btn-bg-hover); }
